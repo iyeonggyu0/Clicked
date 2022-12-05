@@ -125,3 +125,16 @@ Img
 
 - React-create-app
 - Readme.me Updata
+
+#
+
+### settings
+
+###### Dev 5, 2022
+
+- Create file structure
+- install animeJs
+- styles
+  - common.js
+  - globalStyl
+  - theme
