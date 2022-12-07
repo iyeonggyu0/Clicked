@@ -112,8 +112,12 @@ Img
   - 생활 패턴
   - 즐겨하는 게임
   - 선호 음식
+    등 등
 
 ## 사전 조사 결과:
+
+반 학생 25명 중
+결석자 2명을 제외한 23명의 학생의 프로필 데이터 등록
 
 #
 
@@ -126,7 +130,7 @@ Img
 - React-create-app
 - Readme.me Updata
 
-#
+<br/>
 
 ### settings
 
@@ -138,3 +142,19 @@ Img
   - common.js
   - globalStyl
   - theme
+
+<br/>
+
+### profile data
+
+###### Dev 6, 2022
+
+- 조사에 응답한 23명의 프로필 등록
+  > ( 사용자 개인의 데이터 이기때문에 git에는 노출 안됨 )
+
+### MainPage
+
+###### Dev 7, 2022
+
+- user Profile Data 업데이트
+- MainPage
