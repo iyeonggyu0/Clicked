@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import theme from "./styles/theme.js";
 import MainPage from "./pages/mainPage";
+import QuestionsPage from "./pages/frQuestionsPage";
 
 // Page
 
@@ -20,6 +21,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainPage />} />
+            <Route path="/:type/:idx" element={<QuestionsPage />} />
             {/* <Route path={"/*"} element={<NotFountPage />} /> */}
           </Routes>
         </BrowserRouter>

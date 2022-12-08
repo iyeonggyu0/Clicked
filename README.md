@@ -152,9 +152,19 @@ Img
 - 조사에 응답한 23명의 프로필 등록
   > ( 사용자 개인의 데이터 이기때문에 git에는 노출 안됨 )
 
+<br/>
+
 ### MainPage
 
 ###### Dev 7, 2022
 
 - user Profile Data 업데이트
 - MainPage
+
+<br/>
+
+### QuestionsPage_1
+
+###### Dev 8, 2022
+
+- params 형식의 주소값에 따라 문제를 다르게 표시하도록 제작중
