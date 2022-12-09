@@ -12,7 +12,7 @@ const palette = {
   cpSubColor2: "#ECD6D9",
 
   fontColor: "#ffffff",
-  fontSubColor: "#000000",
+  fontSubColor: "#736B6B",
 };
 
 const fontSize = {
