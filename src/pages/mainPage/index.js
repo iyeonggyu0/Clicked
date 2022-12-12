@@ -14,18 +14,20 @@ const MainPage = () => {
     // AOS Library 초기화
     AOS.init();
   });
+
+  console.log();
   return (
     <MainPageStyle>
       <div style={{ height: "100vh" }}>
         <MainLogo media={media} className={"center"}></MainLogo>
       </div>
       <Div media={media}>
-        <Link to="/" data-aos="fade-up" data-aos-duration="1500">
+        <Link to="/friend/1" data-aos="fade-up" data-aos-duration="1500">
           <div className="img1">
             <p className={"centerText"}>친구찾기</p>
           </div>
         </Link>
-        <Link to="/" data-aos="fade-up" data-aos-duration="1500">
+        <Link to="/couple/1" data-aos="fade-up" data-aos-duration="1500">
           <div className="img2">
             <p className={"centerText"}>연인찾기</p>
           </div>

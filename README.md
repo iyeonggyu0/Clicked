@@ -125,7 +125,7 @@ Img
 
 ### first commit
 
-###### Dev 5, 2022
+###### Dec 5, 2022
 
 - React-create-app
 - Readme.me Updata
@@ -134,7 +134,7 @@ Img
 
 ### settings
 
-###### Dev 5, 2022
+###### Dec 5, 2022
 
 - Create file structure
 - install animeJs
@@ -147,7 +147,7 @@ Img
 
 ### profile data
 
-###### Dev 6, 2022
+###### Dec 6, 2022
 
 - 조사에 응답한 23명의 프로필 등록
   > ( 사용자 개인의 데이터 이기때문에 git에는 노출 안됨 )
@@ -156,7 +156,7 @@ Img
 
 ### MainPage
 
-###### Dev 7, 2022
+###### Dec 7, 2022
 
 - user Profile Data 업데이트
 - MainPage
@@ -165,7 +165,7 @@ Img
 
 ### QuestionsPage_1
 
-###### Dev 8, 2022
+###### Dec 8, 2022
 
 - params 형식의 주소값에 따라 질문을 다르게 표시 [ 제작중 ]
 
@@ -173,10 +173,19 @@ Img
 
 ### QuestionsPage_2
 
-###### Dev 9, 2022
+###### Dec 9, 2022
 
 - params 형식의 주소 값( /:type )을 감지하여 선택한 모드가 무엇인지 파악하여 표시
 - params 형식의 주소 값( /:type/:idx )에 따라 어떤모드의 몇 번째 질문인지를 파악
   > state 객체를 사용하여 idx에 따라 값을 변경해준 뒤에 렌더링하였음
 - 질문의 단계에 따른 선택지의 개수 역시 map으로 컴포넌트를 반복하였음.
   > 하나의 페이지에서 1개의 버튼 컴포넌트를 가지고 친구 찾기, 연인 찾기 모드를 모두 구현함
+
+<br/>
+
+### QuestionsPage_3
+
+###### Dec 12, 2022
+
+- 선택 결과를 담을 객체를 Context를 통하여 전역으로 만들고 질문의 답을 고를때 현재 주소 값( /:type/:idx )을 dispatch를 통해 전달하고 reducer로 변경
+- 결과 페이지에서 선택 결과에따라 userProfile를 필터링하여 랜더링
