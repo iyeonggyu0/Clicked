@@ -1,12 +1,14 @@
 import React from "react";
-import "./App.css";
-import GlobalStyle from "./styles/globalStyle";
-import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme.js";
+import GlobalStyle from "./styles/globalStyle";
+
 import MainPage from "./pages/mainPage";
 import QuestionsPage from "./pages/questionsPage";
 import ConfirmPage from "./pages/confirmPage";
+import LoadingPage from "./pages/loadingPage";
 // Page
 
 // 나중에 삭제하기 * 폰트 어썸
@@ -20,8 +22,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/friend/9" element={<ConfirmPage />} />
-          <Route path="/couple/9" element={<ConfirmPage />} />
+          <Route path="/:type/9" element={<LoadingPage />} />
+          <Route path="/:type/confirm" element={<ConfirmPage />} />
           <Route path="/:type/:idx" element={<QuestionsPage />} />
           {/* <Route path={"/*"} element={<NotFountPage />} /> */}
         </Routes>

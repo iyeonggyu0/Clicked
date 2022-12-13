@@ -10,14 +10,15 @@ import { SelectDataContext } from "../../../context/selectContext";
 const SelectButton = (props) => {
   const options = [
     { value: "none", label: "선택" },
-    { value: "game", label: "게임" },
-    { value: "cook", label: "요리" },
-    { value: "move", label: "영화" },
-    { value: "song", label: "노래" },
-    { value: "book", label: "책읽기" },
-    { value: "study", label: "공부" },
-    { value: "anie", label: "애니보기" },
-    { value: "virtue", label: "아이돌 덕질" },
+    { value: "게임", label: "게임" },
+    { value: "요리", label: "요리" },
+    { value: "영화", label: "영화" },
+    { value: "노래", label: "노래" },
+    { value: "책읽기", label: "책읽기" },
+    { value: "공부", label: "공부" },
+    { value: "애니보기", label: "애니보기" },
+    { value: "아이돌 덕질", label: "아이돌 덕질" },
+    { value: "퍼즐", label: "퍼즐" },
   ];
   const [selectOptions, setSelectOptions] = useState(options[0]);
   // eslint-disable-next-line no-unused-vars

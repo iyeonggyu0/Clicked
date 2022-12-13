@@ -1,40 +1,31 @@
-import ProfileComponents from "../../components/profile";
-import { useContext, useEffect, useState } from "react";
+import PcProfileComponents from "../../components/profile/pc";
+import { useContext } from "react";
 import { SelectDataContext } from "../../context/selectContext";
 import { useMedia } from "../../hooks/mediaHook";
-import { useLocation } from "react-router-dom";
 import { userProfile } from "../../datas/userProfile";
+
+import { ConfirmPageStyle } from "./style";
 
 const ConfirmPage = () => {
   const media = useMedia();
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(SelectDataContext);
-  const [url, setUrl] = useState(useLocation());
 
-  useEffect(() => {
-    if (url.pathname === "/friend/9") {
-      setUrl("friend");
-    } else if (url.pathname === "/couple/9") {
-      setUrl("couple");
-    }
-    dispatch({
-      type: url,
-      idx: 9,
-    });
-    // eslint-disable-next-line
-  }, []);
-  console.log(url);
+  console.log(state);
 
-  const [dataState, setDataState] = useState({});
+  const filterProfile = userProfile.user.filter((user) => {
+    return user.line === state.line && (user.hobby[0] === state.hobby || user.hobby[1] === state.hobby || user.hobby[2] === state.hobby || user.hobby[3] === state.hobby) && user.friendCall === state.friendCall && user.spicy === state.spicy && user.time === state.time && user.mbti[0] === state.IE && user.mbti[1] === state.TF && user.mbti[2] === state.JP;
+  });
 
-  useEffect(() => {
-    setDataState({ line: state.line, hobby: state.hobby, friendCall: state.friendCall, spicy: state.spicy, time: state.time, IE: state.IE, TF: state.TF, JP: state.JP });
-    console.log(dataState);
-  }, [state]);
+  console.log(filterProfile);
 
   return (
-    <>
-      <ProfileComponents dataState={dataState} />
-    </>
+    <ConfirmPageStyle media={media}>
+      {/* {filterProfile.map((state, key) => (
+        <PcProfileComponents key={state.id} data={filterProfile[key]} />
+      ))} */}
+      <PcProfileComponents media={media} dataState={filterProfile} />
+    </ConfirmPageStyle>
   );
 };
 export default ConfirmPage;

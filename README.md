@@ -189,3 +189,20 @@ Img
 
 - 선택 결과를 담을 객체를 Context를 통하여 전역으로 만들고 질문의 답을 고를때 현재 주소 값( /:type/:idx )을 dispatch를 통해 전달하고 reducer로 변경
 - 결과 페이지에서 선택 결과에따라 userProfile를 필터링하여 랜더링
+
+<br />
+
+### ConfirmPage
+
+###### Dec 13, 2022
+
+- loading Page 추가 (open source)
+
+  ```
+  # Compress files
+  _A Pen created at CodePen.io. Original URL: [https://codepen.io/aaroniker/pen/OJVwxgE](https://codepen.io/aaroniker/pen/OJVwxgE).
+
+  From https://dribbble.com/shots/10768301--File-Zipping-Button-Micro-Interaction
+  ```
+
+- 유저의 선택에 따른 값을 map으로 반복시킴

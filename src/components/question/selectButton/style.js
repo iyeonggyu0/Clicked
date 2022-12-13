@@ -8,6 +8,7 @@ export const SelectButtonDivStyle = styled.div`
   margin-top: 50px;
   justify-content: space-around;
   flex-wrap: wrap;
+  cursor: pointer;
 `;
 
 export const SelectDivStyle = styled.div`
