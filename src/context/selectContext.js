@@ -13,6 +13,7 @@ const SelectData = {
   JP: "",
 
   datingPlace: "",
+  kidneyMinimum: 0,
   meal: "",
   coupleCall: 0,
   anniversary: 0,
@@ -45,10 +46,38 @@ const reducer = (state, action) => {
           return { ...state, time: action.id };
         case "9":
           return { ...state };
+        default:
+          return state;
       }
-      break;
     case "couple":
-      return "couple";
+      switch (action.idx) {
+        case "1":
+          return { ...state, datingPlace: action.id };
+        case "2":
+          return { ...state, kidneyMinimum: action.id };
+        case "3":
+          return { ...state, meal: action.id };
+        case "4":
+          return { ...state, coupleCall: action.id };
+        case "5":
+          return { ...state, anniversary: action.id };
+        case "6":
+          return { ...state, stlye: action.id };
+        case "7":
+          return { ...state, impression: action.id };
+        case "8":
+          return { ...state, IE: action.id };
+        case "9":
+          return { ...state, TF: action.id };
+        case "10":
+          return { ...state, JP: action.id };
+        case "11":
+          return { ...state, fight: action.id };
+        case "12":
+          return { ...state };
+        default:
+          return state;
+      }
     default:
       return state;
   }

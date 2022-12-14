@@ -34,8 +34,8 @@ const Button = (props) => {
         ))}
       </ButtonDivStyle>
 
-      {/* 커플 */}
-      <ButtonDivStyle style={{ display: props.type === "friend" ? "none" : "flex" }} media={props.media}>
+      {/* 커플 1*/}
+      <ButtonDivStyle style={{ display: props.paramsIdx === "1" || props.paramsIdx === "2" || props.paramsIdx === "7" || props.type === "friend" ? "none" : "flex" }} media={props.media}>
         {props.cpA.A.map((A, key) => (
           <Link
             to={`/${props.type}/${parseInt(props.paramsIdx) + 1}`}

@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { SelectDataContext } from "../../context/selectContext";
 
 import "./frStyle.scss";
@@ -7,10 +7,19 @@ import "./frStyle.scss";
 const LoadingPage = () => {
   // eslint-disable-next-line
   const { state, dispatch } = useContext(SelectDataContext);
+  let url = "";
 
-  const params = useParams();
-  console.log(params.type);
+  const params = useLocation();
   console.log(state);
+
+  useEffect(() => {
+    if (params.pathname === "/couple/12") {
+      // eslint-disable-next-line
+      url = "couple";
+    } else if (params.pathname === "/friend/9") {
+      url = "friend";
+    }
+  }, [params.pathname]);
 
   const linkUrl = useNavigate();
 
@@ -20,7 +29,7 @@ const LoadingPage = () => {
         if (!button.classList.contains("compress")) {
           button.classList.add("compress");
           setTimeout(() => button.classList.remove("compress"), 4500);
-          setTimeout(() => linkUrl(`/${params.type}/confirm`), 4500);
+          setTimeout(() => linkUrl(`/${url}/confirm`), 4500);
         }
         e.preventDefault();
       })

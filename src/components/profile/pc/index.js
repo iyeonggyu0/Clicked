@@ -37,6 +37,7 @@ const PcProfileComponents = (props) => {
     // spicy: props.data.spicy === 1 ? "못 먹음" : props.data.spicy === 2 ? "어느 정도 먹음" : props.data.spicy === 3 ? "잘 먹음" : "",
     // time: props.data.time === 1 ? "아침" : props.data.time === 2 ? "저녁" : props.data.time === 3 ? "새벽" : "",
 
+    // 여기부터 계속하기
     // datingPlace: props.data.datingPlace,
     // meal: props.data.meal,
     // coupleCall: props.data.coupleCall,

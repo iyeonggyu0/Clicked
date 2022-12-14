@@ -206,3 +206,16 @@ Img
   ```
 
 - 유저의 선택에 따른 값을 map으로 반복시킴
+
+<br/>
+
+### QuestionsPage_4
+
+###### Dec 14, 2022
+
+- 연인찾기 질문 페이지 완성
+
+  ```
+  연인찾기 질문 2번 input 태그 scss 출처
+  A Pen created on CodePen.io. Original URL: [https://codepen.io/dsr/pen/rNLxBxw](https://codepen.io/dsr/pen/rNLxBxw).
+  ```
