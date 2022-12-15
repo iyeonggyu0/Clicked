@@ -219,3 +219,14 @@ Img
   연인찾기 질문 2번 input 태그 scss 출처
   A Pen created on CodePen.io. Original URL: [https://codepen.io/dsr/pen/rNLxBxw](https://codepen.io/dsr/pen/rNLxBxw).
   ```
+
+<br/>
+
+### ConfirmPage_2
+
+###### Dec 15, 2022
+
+- selectButton을 사용한 모든 질문에 '상관없음'선택항목을 추가
+- 남 / 여 에서 사용자의 정보가 많지 않은 점을 고려하여 '상관없음' 항목을 추가
+- '상관없음' 항목 추가에 따른 기존 friend_filter를 수정 및 couple_filter 완성
+- 기존 데스크톱과 모바일로 나눈 profile Component를 합성

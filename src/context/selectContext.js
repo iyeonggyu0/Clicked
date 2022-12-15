@@ -11,9 +11,10 @@ const SelectData = {
   IE: "",
   TF: "",
   JP: "",
+  mfn: "",
 
   datingPlace: "",
-  kidneyMinimum: 0,
+  kidney: 0,
   meal: "",
   coupleCall: 0,
   anniversary: 0,
@@ -54,7 +55,7 @@ const reducer = (state, action) => {
         case "1":
           return { ...state, datingPlace: action.id };
         case "2":
-          return { ...state, kidneyMinimum: action.id };
+          return { ...state, kidney: action.id };
         case "3":
           return { ...state, meal: action.id };
         case "4":
@@ -74,6 +75,8 @@ const reducer = (state, action) => {
         case "11":
           return { ...state, fight: action.id };
         case "12":
+          return { ...state, mfn: action.id };
+        case "13":
           return { ...state };
         default:
           return state;

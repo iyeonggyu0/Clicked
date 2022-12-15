@@ -19,6 +19,7 @@ const SelectButton = (props) => {
     { value: "애니보기", label: "애니보기" },
     { value: "아이돌 덕질", label: "아이돌 덕질" },
     { value: "퍼즐", label: "퍼즐" },
+    { value: "상관없음", label: "상관없음" },
   ];
 
   const cpOptions = [
@@ -36,7 +37,7 @@ const SelectButton = (props) => {
     { value: "강아지", label: "강아지" },
     { value: "고양이", label: "고양이" },
     { value: "곰", label: "곰" },
-    { value: "기타", label: "기타(상관없음)" },
+    { value: "상관없음", label: "기타(상관없음)" },
   ];
 
   const [selectOptions, setSelectOptions] = useState();

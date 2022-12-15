@@ -13,7 +13,7 @@ const LoadingPage = () => {
   console.log(state);
 
   useEffect(() => {
-    if (params.pathname === "/couple/12") {
+    if (params.pathname === "/couple/13") {
       // eslint-disable-next-line
       url = "couple";
     } else if (params.pathname === "/friend/9") {
@@ -28,8 +28,8 @@ const LoadingPage = () => {
       button.addEventListener("click", (e) => {
         if (!button.classList.contains("compress")) {
           button.classList.add("compress");
-          setTimeout(() => button.classList.remove("compress"), 4500);
-          setTimeout(() => linkUrl(`/${url}/confirm`), 4500);
+          setTimeout(() => button.classList.remove("compress"), 4000);
+          setTimeout(() => linkUrl(`/${url}/confirm`), 4000);
         }
         e.preventDefault();
       })

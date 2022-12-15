@@ -162,8 +162,8 @@ const QuestionsPage = () => {
           id: 4,
           Anum: 2,
           A: [
-            { id: 1, A: "5번 이하" },
-            { id: 2, A: "5번 이상" },
+            { id: 1, A: "다섯 번 미만" },
+            { id: 2, A: "다섯 번 이상" },
           ],
         });
       } else if (paramsIdx === "5") {
@@ -237,6 +237,17 @@ const QuestionsPage = () => {
           A: [
             { id: 1, A: "바로 화해한다" },
             { id: 2, A: "시간을 두고 화해한다" },
+          ],
+        });
+      } else if (paramsIdx === "12") {
+        setText("나의 성별은?");
+        setCpA({
+          id: 12,
+          Anum: 3,
+          A: [
+            { id: "m", A: "남자" },
+            { id: "f", A: "여자" },
+            { id: "n", A: "무시하고 계속" },
           ],
         });
       }

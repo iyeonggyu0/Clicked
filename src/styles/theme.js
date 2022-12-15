@@ -15,6 +15,14 @@ const palette = {
   fontSubColor: "#736B6B",
 };
 
+const profile = {
+  frBgColor: "#E8F4EF",
+  frColor1: "#c5dcd5",
+
+  cpBgColor: "#FFEFE8",
+  cpColor1: "#EEC4A6",
+};
+
 const fontSize = {
   small: "12px",
   medium: "14px",
@@ -45,6 +53,7 @@ const theme = {
   fontSize,
   fontWeight,
   lineHeight,
+  profile,
 };
 
 export default theme;

@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/friend/9" element={<LoadingPage />} />
-          <Route path="/couple/12" element={<LoadingPage />} />
+          <Route path="/couple/13" element={<LoadingPage />} />
           <Route path="/:type/confirm" element={<ConfirmPage />} />
           <Route path="/:type/:idx" element={<QuestionsPage />} />
           {/* <Route path={"/*"} element={<NotFountPage />} /> */}
