@@ -9,6 +9,7 @@ import MainPage from "./pages/mainPage";
 import QuestionsPage from "./pages/questionsPage";
 import ConfirmPage from "./pages/confirmPage";
 import LoadingPage from "./pages/loadingPage";
+import ErrorPage from "./pages/errorPage";
 // Page
 
 // 나중에 삭제하기 * 폰트 어썸
@@ -26,7 +27,7 @@ function App() {
           <Route path="/couple/13" element={<LoadingPage />} />
           <Route path="/:type/confirm" element={<ConfirmPage />} />
           <Route path="/:type/:idx" element={<QuestionsPage />} />
-          {/* <Route path={"/*"} element={<NotFountPage />} /> */}
+          <Route path={"/*"} element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

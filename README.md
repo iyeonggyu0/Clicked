@@ -230,3 +230,11 @@ Img
 - 남 / 여 에서 사용자의 정보가 많지 않은 점을 고려하여 '상관없음' 항목을 추가
 - '상관없음' 항목 추가에 따른 기존 friend_filter를 수정 및 couple_filter 완성
 - 기존 데스크톱과 모바일로 나눈 profile Component를 합성
+
+<br/>
+
+### ErrorPage
+
+###### Dec 16, 2022
+
+- 404Page
