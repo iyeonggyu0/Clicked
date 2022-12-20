@@ -1,11 +1,11 @@
 // import PcProfileComponents from "../../components/profile/pc";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { SelectDataContext } from "../../context/selectContext";
 import { useMedia } from "../../hooks/mediaHook";
 import { userProfile } from "../../datas/userProfile";
 
-import { ConfirmPageStyle } from "./style";
-import { useParams } from "react-router-dom";
+import { ConfirmPageStyle, LinkStyle } from "./style";
+import { Link, useParams } from "react-router-dom";
 import ProfileComponents from "../../components/profile";
 
 const ConfirmPage = () => {
@@ -29,11 +29,18 @@ const ConfirmPage = () => {
   console.log(filterProfile);
 
   return (
-    <ConfirmPageStyle media={media}>
-      {filterProfile.map((state, key) => (
-        <ProfileComponents key={state.id} data={filterProfile[key]} />
-      ))}
-    </ConfirmPageStyle>
+    <>
+      <ConfirmPageStyle media={media}>
+        {filterProfile.map((state, key) => (
+          <ProfileComponents key={state.id} data={filterProfile[key]} />
+        ))}
+      </ConfirmPageStyle>
+      <Link to="/">
+        <LinkStyle filterProfile={filterProfile}>
+          <p>일치하는 프로필이 없습니다 ( 돌아가기 )</p>
+        </LinkStyle>
+      </Link>
+    </>
   );
 };
 export default ConfirmPage;
