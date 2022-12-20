@@ -11,7 +11,7 @@
 3. 디자인 [[바로가기]](#사이트-디자인)
 4. 개발 [[바로가기]](#개발)
 5. 공유 [[바로가기]](#웹사이트-설계)
-6. [![Netlify Status](https://api.netlify.com/api/v1/badges/bf3677a5-b3d3-499f-976e-0f34e9daf27b/deploy-status)](https://app.netlify.com/sites/jingeon-clicked/deploys)
+
    <br><br>
 
 - 사전 조사 [[바로가기]](#사전-조사)
