@@ -17,7 +17,15 @@
 - 사전 조사 [[바로가기]](#사전-조사)
 - 커밋 내역 [[바로가기]](#커밋-내역)
 
+   <br><br>
 
+## PPT
+
+![제목을-입력해주세요_-001 (3)](https://user-images.githubusercontent.com/105581475/209658732-3b8cbde5-afef-4642-b723-d8d2f80d03cf.png)
+[[ PPT 파일 바로가기 ]](https://docs.google.com/presentation/d/1RZ4xqVoNK0ZB4SauGSawsZXQ-igVkmyQ/edit?usp=share_link&ouid=105338062870466774922&rtpof=true&sd=true)
+###### 다운로드: 좌측 상단의 파일 > 다운로드
+
+<br><br>
 
 ---
 
@@ -58,10 +66,19 @@
 ## 사이트 디자인
 
 메인 색상:
+  bgColor: #ffffff<br>
+  
+  frMainColor: #B6ABAB<br>
+  cpMainColor: #997976<br>
 
-- ## Background color :
-- ## Sub colors :
-- ## point colors :
+  frSubColor1: #A9C5B9<br>
+  frSubColor2: #C5DCD5<br>
+
+  cpSubColor1: #F3C2BD<br>
+  cpSubColor2: #ECD6D9<br>
+
+  fontColor: #FFFFFF<br>
+  fontSubColor: #736B6B<br>
 
 <br>
 글꼴:
